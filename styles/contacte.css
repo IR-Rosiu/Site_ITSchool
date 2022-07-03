@@ -27,4 +27,7 @@
     background-color: var(--text-color-light);
     margin-top: -80px;
     height: 20rem;
+    border: 10px solid red;
+    box-sizing: border-box;
+    display: block;
 }

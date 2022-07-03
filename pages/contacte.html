@@ -1,61 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/contacte.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/contacte.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacte</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="layout">
-        <header>
-            <nav>
-                <a href="../index.html">
-                    <img src="https://www.itschool.ro/images/logo-itschool-dark.svg" alt="Logo" />
-                </a>
-                <ul>
-                    <li>
-                        <a href="../index.html">Acasa</a>
-                    </li>
-                    <li>
-                        <a href="cursuri.html">Cursuri</a>
-                    </li>
-                    <li>
-                        <a class="dropdown" href="about.html">
-                            Despre noi
-                            <span class="material-icons">
-                                arrow_drop_down
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="active" href="#">Contacte</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="top-section">
-                <div class="bg-contacte"></div>
-                <div class="hero-title">
-                    <h1>Suntem aici sa te ajutam</h1>
-                </div>
-            </section>
-            <section class="mid-section">
-
-            </section>
-        </main>
-        <footer>B</footer>
+      <header>
+        <nav>
+          <a href="../index.html">
+            <img
+              src="https://www.itschool.ro/images/logo-itschool-dark.svg"
+              alt="Logo"
+            />
+          </a>
+          <ul>
+            <li>
+              <a href="../index.html">Acasa</a>
+            </li>
+            <li>
+              <a href="cursuri.html">Cursuri</a>
+            </li>
+            <li>
+              <a class="dropdown" href="about.html">
+                Despre noi
+                <span class="material-icons"> arrow_drop_down </span>
+              </a>
+            </li>
+            <li>
+              <a class="active" href="#">Contacte</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="top-section">
+          <div class="bg-contacte"></div>
+          <div class="hero-title">
+            <h1>Suntem aici sa te ajutam</h1>
+          </div>
+        </section>
+        <section class="mid-section">
+          <div class="bg-contacts"></div>
+          <div class="general-information">
+            <h1>Informatii generale</h1>
+          </div>
+          <div class="container">
+            <form action="action_page.php">
+              <label for="lname">Nume</label>
+              <input type="text" id="lname" name="lastname" />
+              <label for="fname"> Prenume</label>
+              <input type="text" id=" fname" name=" firstname" />
+              <label for="pnumber">Telefon</label>
+              <input type="tel" id="pnumber" name="phonenumber" />
+              <label for="mail">E-mail</label>
+              <input type="email" name="email" id="email" />
+              <label for="msg">Mesaj</label>
+              <input type="text" placeholder="Salut, IT School!" name="msg" id="message" style="height:3rem">
+              <div>
+                  <p> Prin completarea acestui formular esti de acord cu 
+                      <a target="_blank" href="https://www.itschool.ro/termeni-si-conditii" >Termenii si conditiile</a>
+                      IT School
+                  </p>
+              </div>
+              <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>B</footer>
     </div>
-</body>
-
+  </body>
 </html>
